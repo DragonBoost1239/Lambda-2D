@@ -1,5 +1,3 @@
-.github/workflows/extract_and_build.yml
-
 name: Extract ZIP and Build APK
 
 on:
