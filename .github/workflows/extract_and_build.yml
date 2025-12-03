@@ -33,3 +33,12 @@ jobs:
         with:
           name: lambda2d-apk
           path: platforms/android/app/build/outputs/**/*.apk
+          
+- name: Upload ANY APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: lambda2d-apk
+          path: |
+            platforms/android/**/*.apk
+            platforms/android/app/**/*.apk
+            platforms/**/**/*.apk
